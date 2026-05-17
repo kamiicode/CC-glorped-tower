@@ -2,7 +2,7 @@ local input_inventory = peripheral.find("minecraft:barrel")
 local output_inventory = peripheral.find("minecraft:chest")
 
 while true do
-  for i=1, input_inventory.size() do
+  for items in pairs(input_inventory.list()) do
     if barrel.getItemDetail(i).name == "minecraft:slime" then
         input_inventory.pushItems(output_inventory.name, 1)
     else
