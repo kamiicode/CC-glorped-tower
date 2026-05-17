@@ -1,4 +1,4 @@
-local input_inventory = peripheral.find("sophisticatedstorage:barrel_2")
+local input_inventory = peripheral.find("sophisticatedstorage:barrel")
 local output_inventory = peripheral.find("minecraft:chest")
 
 while true do
